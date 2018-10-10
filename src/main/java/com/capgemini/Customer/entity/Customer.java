@@ -11,7 +11,7 @@ public class Customer {
 	private String firstName;
 	private String lastName;
 	private String email;
-	private String contact;
+	private long contact;
 	private Address address;
 	public Customer() {
 		super();
@@ -27,7 +27,7 @@ public class Customer {
 	}
 
 	public Customer(int customerId, String customerPassword, String firstName, String lastName, String email,
-			String contact, Address address) {
+			long contact, Address address) {
 		super();
 		this.customerId = customerId;
 		this.customerPassword = customerPassword;
@@ -62,10 +62,10 @@ public class Customer {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getContact() {
+	public long getContact() {
 		return contact;
 	}
-	public void setContact(String contact) {
+	public void setContact(long contact) {
 		this.contact = contact;
 	}
 	public Address getAddress() {
